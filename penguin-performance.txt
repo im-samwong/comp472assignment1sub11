@@ -1,0 +1,265 @@
+**************************************************
+(A) Model: Base-DT
+----Run 1----
+(B) Confusion Matrix:
+[[33  3  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97058824 0.8        1.        ]
+    Recall: [0.91666667 1.         0.94736842]
+    F1: [0.94285714 0.88888889 0.97297297]
+(D) Accuracy: 0.9402985074626866
+    Macro-average F1: 0.934906334906335
+    Weighted-average F1: 0.9417314969553775
+----Run 2----
+(B) Confusion Matrix:
+[[33  3  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97058824 0.8        1.        ]
+    Recall: [0.91666667 1.         0.94736842]
+    F1: [0.94285714 0.88888889 0.97297297]
+(D) Accuracy: 0.9402985074626866
+    Macro-average F1: 0.934906334906335
+    Weighted-average F1: 0.9417314969553775
+----Run 3----
+(B) Confusion Matrix:
+[[35  1  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97222222 0.92307692 1.        ]
+    Recall: [0.97222222 1.         0.94736842]
+    F1: [0.97222222 0.96       0.97297297]
+(D) Accuracy: 0.9701492537313433
+    Macro-average F1: 0.9683983983983984
+    Weighted-average F1: 0.9702460669624849
+----Run 4----
+(B) Confusion Matrix:
+[[31  5  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.96875    0.70588235 1.        ]
+    Recall: [0.86111111 1.         0.94736842]
+    F1: [0.91176471 0.82758621 0.97297297]
+(D) Accuracy: 0.9104477611940298
+    Macro-average F1: 0.9041079619172926
+    Weighted-average F1: 0.9140455280747734
+----Run 5----
+(B) Confusion Matrix:
+[[33  3  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97058824 0.8        1.        ]
+    Recall: [0.91666667 1.         0.94736842]
+    F1: [0.94285714 0.88888889 0.97297297]
+(D) Accuracy: 0.9402985074626866
+    Macro-average F1: 0.934906334906335
+    Weighted-average F1: 0.9417314969553775
+----Aggregate Metrics----
+(A) Average Accuracy: 0.9402985074626866
+    Variance in Accuracy: 0.0004455335263978624
+(B) Average Macro-average F1: 0.9354450730069391
+    Variance in Macro-average F1: 0.0005172017255058419
+(C) Average Weighted-average F1: 0.9418972171806782
+    Variance in Weighted-average F1: 0.00039486406489566104
+**************************************************
+
+**************************************************
+(A) Model: Top-DT with GridSearchCV
+Best parameters: {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+----Run 1----
+(B) Confusion Matrix:
+[[35  1  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97222222 0.92307692 1.        ]
+    Recall: [0.97222222 1.         0.94736842]
+    F1: [0.97222222 0.96       0.97297297]
+(D) Accuracy: 0.9701492537313433
+    Macro-average F1: 0.9683983983983984
+    Weighted-average F1: 0.9702460669624849
+----Run 2----
+(B) Confusion Matrix:
+[[36  0  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97297297 1.         1.        ]
+    Recall: [1.         1.         0.94736842]
+    F1: [0.98630137 1.         0.97297297]
+(D) Accuracy: 0.9850746268656716
+    Macro-average F1: 0.9864247809453289
+    Weighted-average F1: 0.9849751612172385
+----Run 3----
+(B) Confusion Matrix:
+[[36  0  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97297297 1.         1.        ]
+    Recall: [1.         1.         0.94736842]
+    F1: [0.98630137 1.         0.97297297]
+(D) Accuracy: 0.9850746268656716
+    Macro-average F1: 0.9864247809453289
+    Weighted-average F1: 0.9849751612172385
+----Run 4----
+(B) Confusion Matrix:
+[[35  1  0]
+ [ 1 11  0]
+ [ 1  0 18]]
+(C) Precision: [0.94594595 0.91666667 1.        ]
+    Recall: [0.97222222 0.91666667 0.94736842]
+    F1: [0.95890411 0.91666667 0.97297297]
+(D) Accuracy: 0.9552238805970149
+    Macro-average F1: 0.949514583076227
+    Weighted-average F1: 0.9553288721148054
+----Run 5----
+(B) Confusion Matrix:
+[[36  0  0]
+ [ 0 12  0]
+ [ 1  0 18]]
+(C) Precision: [0.97297297 1.         1.        ]
+    Recall: [1.         1.         0.94736842]
+    F1: [0.98630137 1.         0.97297297]
+(D) Accuracy: 0.9850746268656716
+    Macro-average F1: 0.9864247809453289
+    Weighted-average F1: 0.9849751612172385
+----Aggregate Metrics----
+(A) Average Accuracy: 0.9761194029850746
+    Variance in Accuracy: 0.0001782134105591441
+(B) Average Macro-average F1: 0.9754374648621225
+    Variance in Macro-average F1: 0.00027092690022577397
+(C) Average Weighted-average F1: 0.9761000845458012
+    Variance in Weighted-average F1: 0.00017550343637275003
+**************************************************
+
+**************************************************
+(A) Model: Base-MLP
+----Run 1----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 2----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 3----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 4----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 5----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Aggregate Metrics----
+(A) Average Accuracy: 0.5373134328358209
+    Variance in Accuracy: 0.0
+(B) Average Macro-average F1: 0.23300970873786406
+    Variance in Macro-average F1: 9.62964972193618e-34
+(C) Average Weighted-average F1: 0.37559773945804953
+    Variance in Weighted-average F1: 0.0
+**************************************************
+
+**************************************************
+(A) Model: Top-MLP with GridSearchCV
+----Run 1----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 2----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 3----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Run 4----
+(B) Confusion Matrix:
+[[ 0  0 36]
+ [ 0  0 12]
+ [ 0  0 19]]
+(C) Precision: [0.         0.         0.28358209]
+    Recall: [0. 0. 1.]
+    F1: [0.         0.         0.44186047]
+(D) Accuracy: 0.2835820895522388
+    Macro-average F1: 0.14728682170542637
+    Weighted-average F1: 0.12530371398819856
+----Run 5----
+(B) Confusion Matrix:
+[[36  0  0]
+ [12  0  0]
+ [19  0  0]]
+(C) Precision: [0.53731343 0.         0.        ]
+    Recall: [1. 0. 0.]
+    F1: [0.69902913 0.         0.        ]
+(D) Accuracy: 0.5373134328358209
+    Macro-average F1: 0.23300970873786409
+    Weighted-average F1: 0.37559773945804953
+----Aggregate Metrics----
+(A) Average Accuracy: 0.4865671641791044
+    Variance in Accuracy: 0.012875918912898198
+(B) Average Macro-average F1: 0.21586513133137655
+    Variance in Macro-average F1: 0.0014696826722352156
+(C) Average Weighted-average F1: 0.3255389343640793
+    Variance in Weighted-average F1: 0.012529419837180481
+**************************************************
+

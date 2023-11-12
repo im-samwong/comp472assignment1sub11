@@ -258,3 +258,33 @@ plt.figure(figsize=(20, 10))
 tree.plot_tree(best_dt, filled=True)
 plt.title("Best Decision Tree for Abalone data set found by GridSearch")
 # plt.show()
+
+#c
+#Penguin
+# Initialize the MLP with the specified parameters
+base_mlp = MLPClassifier(hidden_layer_sizes=(100, 100),
+                         activation='logistic',
+                         solver='sgd',
+                         max_iter=1000)
+                         #random_state=42)  # random_state is optional for reproducibility
+
+evaluate_classifier(base_mlp, Xp_train, Xp_test, yp_train, yp_test, "penguin", "Base-MLP")
+
+#Abalone
+evaluate_classifier(base_mlp, Xa_train, Xa_test, ya_train, ya_test, "abalone", "Base-MLP")
+
+
+#d
+# Define the parameter grid to search
+param_grid = {
+    'activation': ['logistic', 'tanh', 'relu'],
+    'hidden_layer_sizes': [(30, 50), (5, 5, 5)],
+    'solver': ['adam', 'sgd']
+}
+grid_search = GridSearchCV(estimator=MLPClassifier(max_iter=1000), param_grid=param_grid)
+
+#Penguin
+evaluate_classifier(grid_search, Xp_train, Xp_test, yp_train, yp_test, "penguin", "Top-MLP with GridSearchCV")
+
+#Abalone
+evaluate_classifier(grid_search, Xa_train, Xa_test, ya_train, ya_test, "abalone", "Top-MLP with GridSearchCV")

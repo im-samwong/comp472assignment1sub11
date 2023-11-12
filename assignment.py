@@ -201,4 +201,60 @@ tree.plot_tree(base_dt, filled=True)
 plt.title("Decision Tree for Abalone Dataset")
 # plt.show()
 
+# b
+# Define the parameter grid to search
+param_grid = {
+    "criterion": ["gini", "entropy"],
+    "max_depth": [None, 3, 5],  # Replace 10 and 20 with your choice of depths
+    "min_samples_split": [2, 50, 100],  # Replace with your choice of min samples split
+}
 
+# Initialize the grid search with a decision tree classifier
+grid_search = GridSearchCV(tree.DecisionTreeClassifier(), param_grid, cv=5)
+
+# Penguin
+# Fit the grid search to the training data
+grid_search.fit(Xp_train, yp_train)
+
+# Get the best model
+best_dt = grid_search.best_estimator_
+
+# Now you can use best_dt to make predictions and plot the tree
+evaluate_classifier(
+    grid_search,
+    Xp_train,
+    Xp_test,
+    yp_train,
+    yp_test,
+    "penguin",
+    "Top-DT with GridSearchCV",
+)
+
+# Plot the best decision tree
+plt.figure(figsize=(20, 10))
+tree.plot_tree(best_dt, filled=True)
+plt.title("Best Decision Tree for Penguin data set found by GridSearch")
+# plt.show()
+
+# Abalone
+# Fit the grid search to the training data
+grid_search.fit(Xa_train, ya_train)
+
+# Get the best model
+best_dt = grid_search.best_estimator_
+
+evaluate_classifier(
+    grid_search,
+    Xa_train,
+    Xa_test,
+    ya_train,
+    ya_test,
+    "abalone",
+    "Top-DT with GridSearchCV",
+)
+
+# Plot the best decision tree
+plt.figure(figsize=(20, 10))
+tree.plot_tree(best_dt, filled=True)
+plt.title("Best Decision Tree for Abalone data set found by GridSearch")
+# plt.show()
